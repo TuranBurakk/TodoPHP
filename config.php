@@ -6,8 +6,8 @@
 
     try {
 
-        $baglanti=new PDO("mysql:host=".$server.";dbname=".$dbName.";charset=utf8",$user,$password);
-        echo "veritabanına bağlandı";
+        $pdo=new PDO("mysql:host=".$server.";dbname=".$dbName.";charset=utf8",$user,$password);
+        
 
     } catch (PDOException $e) {
         echo $e->getMessage();
